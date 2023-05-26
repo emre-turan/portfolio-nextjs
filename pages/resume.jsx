@@ -66,20 +66,31 @@ const resume = () => {
         {/* Skills */}
         <div className="text-center py-4">
           <h5 className="text-center underline text-[18px] py-2">Skills</h5>
-          <p className="py-2">
+          <div className="flex flex-wrap justify-center py-2">
             <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>Front-End Web Developer
-            <span className="px-2">|</span> HTML
-            <span className="px-2">|</span>CSS
-            <span className="px-2">|</span>Javascript
-            <span className="px-2">|</span>Typescript
-            <span className="px-2">|</span>React
-            <span className="px-2">|</span>Nextjs
-            <span className="px-2">|</span>MongoDB
-            <span className="px-2">|</span>Nodejs
-            <span className="px-2">|</span>Tailwind
-            <span className="px-2">|</span>Bootstrap
-          </p>
+            <span className="px-2">|</span>
+            <span>Front-End Web Developer</span>
+            <span className="px-2">|</span>
+            <span>HTML</span>
+            <span className="px-2">|</span>
+            <span>CSS</span>
+            <span className="px-2">|</span>
+            <span>Javascript</span>
+            <span className="px-2">|</span>
+            <span>Typescript</span>
+            <span className="px-2">|</span>
+            <span>React</span>
+            <span className="px-2">|</span>
+            <span>Nextjs</span>
+            <span className="px-2">|</span>
+            <span>MongoDB</span>
+            <span className="px-2">|</span>
+            <span>Nodejs</span>
+            <span className="px-2">|</span>
+            <span>Tailwind</span>
+            <span className="px-2">|</span>
+            <span>Bootstrap</span>
+          </div>
         </div>
 
         <h5 className="text-center underline text-[18px] py-4">
