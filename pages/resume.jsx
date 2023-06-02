@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaMediumM } from "react-icons/fa";
 
 const resume = () => {
   return (
@@ -32,6 +32,13 @@ const resume = () => {
               rel="noreferrer"
             >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
+            </a>
+            <a
+              href="https://medium.com/@itsemreturan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaMediumM size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
         </div>
