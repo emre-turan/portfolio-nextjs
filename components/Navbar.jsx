@@ -37,7 +37,7 @@ const Navbar = () => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
-        <Link href="/" legacyBehavior>
+        <Link href="/">
           <Image
             src={NavLogo}
             alt="/"
@@ -52,19 +52,28 @@ const Navbar = () => {
               <Link href="/">Home</Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
-              <Link href="/#about">About</Link>
+              <Link href="/#about" scroll={false}>
+                About
+              </Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
-              <Link href="/#skills">Skills</Link>
+              <Link href="/#skills" scroll={false}>
+                {" "}
+                Skills
+              </Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
-              <Link href="/#projects">Projects</Link>
+              <Link href="/#projects" scroll={false}>
+                Projects
+              </Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
               <Link href="/resume">Resume</Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
-              <Link href="/#contact">Contact</Link>
+              <Link href="/#contact" scroll={false}>
+                Contact
+              </Link>
             </li>
           </ul>
           {/* Hamburger Icon */}
