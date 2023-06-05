@@ -2,14 +2,14 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import AboutImg from "../public/assets/about.jpg";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
-          <Slide direction="left" triggerOnce="true">
+          <Fade direction="left" triggerOnce="true">
             <p className="uppercase text-xl tracking-widest text-jelly-bean-600">
               About
             </p>
@@ -46,13 +46,13 @@ const About = () => {
                 Check out some of my latest projects.
               </p>
             </Link>
-          </Slide>
+          </Fade>
         </div>
-        <Slide direction="right" triggerOnce="true">
+        <Fade direction="right" triggerOnce="true">
           <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300">
             <Image src={AboutImg} className="rounded-xl" alt="/" />
           </div>
-        </Slide>
+        </Fade>
       </div>
     </div>
   );
