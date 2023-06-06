@@ -1,6 +1,11 @@
 import React from "react";
 import Head from "next/head";
-import { FaGithub, FaLinkedinIn, FaMediumM } from "react-icons/fa";
+import {
+  FaGithub,
+  FaLinkedinIn,
+  FaMediumM,
+  FaStackOverflow,
+} from "react-icons/fa";
 
 const resume = () => {
   return (
@@ -39,6 +44,13 @@ const resume = () => {
               rel="noreferrer"
             >
               <FaMediumM size={20} style={{ marginRight: "1rem" }} />
+            </a>
+            <a
+              href="https://stackoverflow.com/users/16639320/emre-turan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaStackOverflow size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
         </div>
