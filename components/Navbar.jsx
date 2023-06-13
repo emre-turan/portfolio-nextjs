@@ -40,7 +40,7 @@ const Navbar = () => {
         <Link href="/">
           <Image
             src={NavLogo}
-            alt="/"
+            alt="Emre Turan - Developer Logo"
             width="125"
             height="150"
             className="cursor-pointer"

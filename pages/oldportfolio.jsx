@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import React from "react";
 import oldportfolioImg from "../public/assets/projects/oldportfolio.png";
 import { RiRadioButtonFill } from "react-icons/ri";
@@ -10,11 +10,10 @@ const oldportfolio = () => {
       <div className="w-screen h-[50vh] relative">
         <div className="absolute top-0 left-0 w-full h-[50vh] bg-black/70 z-10" />
         <Image
-          className="absolute z-1"
-          layout="fill"
-          objectFit="cover"
+          className="absolute z-1 object-cover"
+          fill="true"
           src={oldportfolioImg}
-          alt="/"
+          alt="Old Portfolio - A comprehensive showcase of my web development skills"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
           <h2 className="py-2">Old Portfolio</h2>
@@ -27,12 +26,18 @@ const oldportfolio = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p className="py-2">
-            This app was built using Vanilla Javascript and is hosted on
-            Heroku.This is a showcase of my work and experience as a web
-            developer. The website includes &quot;Work&quot;, &quot;About&quot;,
-            and &quot;Contact&quot; pages in the navigation menu.The website is
-            built using the latest web development technologies and serves as an
-            excellent portfolio piece.
+            This application serves as a comprehensive showcase of my skills and
+            experiences as a web developer. It&apos;s built using Embedded
+            JavaScript (EJS) and is seamlessly hosted on Heroku, demonstrating
+            my proficiency in deploying and managing applications on cloud
+            platforms.
+          </p>
+          <p className="py-2">
+            The website is structured with a user-friendly navigation menu that
+            includes &quot;Work&quot;, &quot;About&quot;, and
+            &quot;Contact&quot; pages. Each of these pages has been meticulously
+            designed to provide visitors with a clear understanding of my
+            capabilities, background, and the means to get in touch with me.
           </p>
           <a
             href="https://github.com/etdesign/my-portfolio-site"

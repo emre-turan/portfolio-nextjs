@@ -2,7 +2,7 @@ import React from "react";
 import allplacepicksImg from "../public/assets/projects/allplacepicks.png";
 import oldportfolioImg from "../public/assets/projects/oldportfolio.png";
 import breatheeaseImg from "../public/assets/projects/breatheease.png";
-import calculatorImg from "../public/assets/projects/calculator.png";
+import appletreeImg from "../public/assets/projects/appletree.png";
 import ProjectItem from "./ProjectItem";
 import { Slide } from "react-awesome-reveal";
 
@@ -40,10 +40,10 @@ const Projects = () => {
             />
 
             <ProjectItem
-              title="Calculator"
-              backgroundImg={calculatorImg}
-              projectUrl="/calculator"
-              tech="Vanilla JS"
+              title="Apple Tree"
+              backgroundImg={appletreeImg}
+              projectUrl="/appletree"
+              tech="React JS | Redux"
             />
           </div>
         </Slide>

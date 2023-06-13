@@ -182,16 +182,19 @@ const resume = () => {
           <p className="py-1 italic">Data Curator (2022 – 2023)</p>
           <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
             <li>
-              Provided top-notch customer service and technical support as an
-              AppleCare Home Advisor.
+              Primarily focusing on data collection. This role required
+              meticulous research on the internet to gather accurate and
+              relevant data.
             </li>
             <li>
-              Successfully resolved a range of complex technical issues with
-              Apple products and services.
+              I extensively used Google Sheets for organizing and managing the
+              collected data. This tool was instrumental in maintaining the
+              structure and accessibility of the vast amount of information.
             </li>
             <li>
-              Gained extensive knowledge and expertise in troubleshooting
-              techniques specific to the Apple ecosystem.
+              Attention to detail was crucial in this role. Ensuring the
+              accuracy and reliability of the data was paramount, as it directly
+              impacted the quality of insights derived from it.
             </li>
           </ul>
         </div>

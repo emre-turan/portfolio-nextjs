@@ -8,7 +8,7 @@ const ProjectItem = ({ title, backgroundImg, tech, projectUrl }) => {
       <Image
         className="object-fill rounded-xl group-hover:opacity-10"
         src={backgroundImg}
-        alt="/"
+        alt={`${title} project using ${tech}`}
         objectFit="cover"
         width={600}
         height={400}

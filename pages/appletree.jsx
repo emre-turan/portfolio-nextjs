@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import breatheeaseImg from "../public/assets/projects/breatheease.png";
+import appletreeImg from "../public/assets/projects/appletree.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 
-const breatheease = () => {
+const appletree = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -12,12 +12,12 @@ const breatheease = () => {
         <Image
           className="absolute z-1 object-cover"
           fill="true"
-          src={breatheeaseImg}
-          alt="Breathe Ease App - A user-friendly web app for guided breathing exercises"
+          src={appletreeImg}
+          alt="Apple Tree - An interactive game showcasing state management with Redux"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
-          <h2 className="py-2">Breathe Ease App</h2>
-          <h3>React JS / Tailwind / Next.js </h3>
+          <h2 className="py-2">Apple Tree</h2>
+          <h3>React / Redux</h3>
         </div>
       </div>
 
@@ -26,27 +26,27 @@ const breatheease = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p className="py-2">
-            I built this application in React JS and is hosted on Vercel.
-            Breathe-Ease is a simple and user-friendly web app designed to guide
-            you through breathing exercises that help reduce stress, improve
-            focus, and promote relaxation.
+            &quot;Apple Tree&quot; is an engaging interactive game that I
+            developed using cutting-edge technologies such as Next.js, React,
+            Redux, and Tailwind CSS. The application is seamlessly hosted on
+            Vercel.
           </p>
           <p className="py-2">
-            To use Breathe-Ease, simply select a breathing method, follow the
-            on-screen instructions, and start the exercise by clicking the
-            &quot;Start&quot; button. The app will guide you through the inhale,
-            hold, and exhale phases of the chosen technique, helping you
-            maintain a consistent rhythm and focus on your breath.
+            The primary objective behind the development of this application was
+            to showcase my proficiency in state management and my adept use of
+            advanced tools like Redux. This game serves as a practical
+            demonstration of how I effectively utilize these modern technologies
+            to create interactive and dynamic user experiences.
           </p>
           <a
-            href="https://github.com/etdesign/breathe-ease"
+            href="https://github.com/etdesign/apple-tree"
             target="_blank"
             rel="noreferrer"
           >
             <button className="px-8 py-2 mt-4 mr-8">Code</button>
           </a>
           <a
-            href="https://breathe-ease.vercel.app/"
+            href="https://apple-tree.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -61,10 +61,13 @@ const breatheease = () => {
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Tailwind
+                <RiRadioButtonFill className="pr-1" /> Redux
               </p>
               <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Javascript
+                <RiRadioButtonFill className="pr-1" /> Typescript
+              </p>
+              <p className="text-gray-600 py-2 flex items-center">
+                <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
               <p className="text-gray-600 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Next.js
@@ -83,4 +86,4 @@ const breatheease = () => {
   );
 };
 
-export default breatheease;
+export default appletree;
