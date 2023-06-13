@@ -45,6 +45,7 @@ const Contact = () => {
                       href="https://www.linkedin.com/in/emre-turan/"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Linkedin"
                     >
                       <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaLinkedinIn />
@@ -54,16 +55,19 @@ const Contact = () => {
                       href="https://github.com/etdesign"
                       target="_blank"
                       rel="noreferrer"
+                      aria-label="Github"
                     >
                       <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <FaGithub />
                       </div>
                     </a>
 
-                    <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
-                      <AiOutlineMail />
-                    </div>
-                    <Link href="/resume">
+                    <Link href="/#contact" scroll={false} aria-label="Contact">
+                      <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
+                        <AiOutlineMail />
+                      </div>
+                    </Link>
+                    <Link href="/resume" aria-label="Resume">
                       <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300">
                         <BsFillPersonLinesFill />
                       </div>
