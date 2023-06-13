@@ -83,10 +83,14 @@ const Contact = () => {
                 >
                   <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2 text-jelly-bean-950 ">
+                      <label
+                        htmlFor="name"
+                        className="uppercase text-sm py-2 text-jelly-bean-950 "
+                      >
                         Name
                       </label>
                       <input
+                        id="name"
                         className="border-2 rounded-lg p-3 flex border-gray-300 "
                         type="text"
                         name="name"
@@ -94,10 +98,14 @@ const Contact = () => {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <label className="uppercase text-sm py-2 text-jelly-bean-950">
+                      <label
+                        htmlFor="phone"
+                        className="uppercase text-sm py-2 text-jelly-bean-950"
+                      >
                         Phone Number
                       </label>
                       <input
+                        id="phone"
                         className="border-2 rounded-lg p-3 flex border-gray-300"
                         type="text"
                         name="phone"
@@ -105,10 +113,14 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-jelly-bean-950">
+                    <label
+                      htmlFor="email"
+                      className="uppercase text-sm py-2 text-jelly-bean-950"
+                    >
                       Email
                     </label>
                     <input
+                      id="email"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="email"
                       name="email"
@@ -116,20 +128,28 @@ const Contact = () => {
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-jelly-bean-950">
+                    <label
+                      htmlFor="subject"
+                      className="uppercase text-sm py-2 text-jelly-bean-950"
+                    >
                       Subject
                     </label>
                     <input
+                      id="subject"
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       name="subject"
                     />
                   </div>
                   <div className="flex flex-col py-2">
-                    <label className="uppercase text-sm py-2 text-jelly-bean-950">
+                    <label
+                      htmlFor="message"
+                      className="uppercase text-sm py-2 text-jelly-bean-950"
+                    >
                       Message
                     </label>
                     <textarea
+                      id="message"
                       className="border-2 rounded-lg p-3 border-gray-300"
                       rows="10"
                       name="message"
