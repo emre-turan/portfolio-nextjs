@@ -19,15 +19,18 @@ const resume = () => {
         <link rel="icon" href="/fav.png" />
       </Head>
 
-      <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
-        <h2 className="text-center">Resume</h2>
-        <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
+      <div className="max-w-[940px] mx-auto p-5 pt-[120px]">
+        <h2 className="text-center text-jelly-bean-950 dark:text-jelly-bean-50 ">
+          Resume
+        </h2>
+        <div className="bg-jelly-bean-950 text-jelly-bean-50 my-4 p-4 w-full flex justify-between items-center rounded-lg dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
           <h2 className="text-center">Emre Turan</h2>
-          <div className="flex">
+          <div className="flex ">
             <a
               href="https://www.linkedin.com/in/emre-turan/"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
@@ -35,6 +38,7 @@ const resume = () => {
               href="https://github.com/etdesign"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
@@ -42,6 +46,7 @@ const resume = () => {
               href="https://medium.com/@itsemreturan"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaMediumM size={20} style={{ marginRight: "1rem" }} />
             </a>
@@ -49,6 +54,7 @@ const resume = () => {
               href="https://stackoverflow.com/users/16639320/emre-turan"
               target="_blank"
               rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
             >
               <FaStackOverflow size={20} style={{ marginRight: "1rem" }} />
             </a>
@@ -84,7 +90,7 @@ const resume = () => {
 
         {/* Skills */}
         <div className="text-center py-4">
-          <h5 className="text-center underline text-[18px] py-2">Skills</h5>
+          <h5 className="text-center underline text-[18px] py-2 ">Skills</h5>
           <div className="flex flex-wrap justify-center py-2">
             <span className="font-bold">Technical Skills</span>
             <span className="px-2">|</span>

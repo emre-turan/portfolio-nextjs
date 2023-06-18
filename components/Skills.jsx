@@ -15,12 +15,12 @@ const Skills = () => {
     <div id="skills" className="w-full lg:h-screen p-2">
       <Slide direction="up" triggerOnce="true">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
-          <p className="text-xl tracking-widest uppercase text-jelly-bean-600">
+          <p className="text-xl tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
             Skills
           </p>
           <h2 className="py-4">What I Can Do</h2>
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -35,7 +35,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -50,7 +50,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -65,7 +65,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -80,7 +80,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -95,7 +95,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -110,7 +110,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image
@@ -125,7 +125,7 @@ const Skills = () => {
                 </div>
               </div>
             </div>
-            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300">
+            <div className="p-6 shadow-xl rounded-xl hover:scale-105 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950">
               <div className="grid grid-cols-2 gap-4 justify-center items-center">
                 <div className="m-auto">
                   <Image

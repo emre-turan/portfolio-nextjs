@@ -9,7 +9,7 @@ export default function Document() {
           rel="stylesheet"
         ></link>
       </Head>
-      <body>
+      <body className="bg-jelly-bean-50 text-jelly-bean-950 dark:bg-jelly-bean-950 dark:text-jelly-bean-50">
         <Main />
         <NextScript />
       </body>

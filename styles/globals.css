@@ -11,7 +11,7 @@ html {
 
 @layer base {
   body {
-    @apply bg-[#ecf0f3] text-[#1f2937] tracking-wide;
+    @apply tracking-wide;
   }
 
   h1,
@@ -33,9 +33,5 @@ html {
 
   li {
     @apply cursor-pointer;
-  }
-
-  button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#27799c] to-[#80cbe0] text-white;
   }
 }

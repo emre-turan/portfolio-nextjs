@@ -10,12 +10,14 @@ const About = () => {
       <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
         <div className="col-span-2">
           <Fade direction="left" triggerOnce="true">
-            <p className="uppercase text-xl tracking-widest text-jelly-bean-600">
+            <p className="uppercase text-xl tracking-widest text-jelly-bean-600 dark:text-jelly-bean-300">
               About
             </p>
-            <h2 className="py-4">Who I Am</h2>
+            <h2 className="py-4 text-jelly-bean-950 dark:text-jelly-bean-50">
+              Who I Am
+            </h2>
 
-            <p className="py-2 text-jelly-bean-950">
+            <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
               As a dedicated web developer, my focus lies in constructing
               mobile-responsive front-end UI applications. These applications
               are adept at interfacing with APIs and other backend technologies,
@@ -26,7 +28,7 @@ const About = () => {
               efficient and visually appealing user interfaces that deliver on
               user expectations.
             </p>
-            <p className="py-2 text-jelly-bean-950">
+            <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
               However, my passion for this field extends beyond these familiar
               technologies. I have a deep enthusiasm for learning and exploring
               new technologies that can enhance the development process. I
@@ -42,14 +44,14 @@ const About = () => {
             </p>
 
             <Link href="/#projects" legacyBehavior>
-              <p className="py-2 text-jelly-bean-900 underline cursor-pointer">
+              <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50  underline cursor-pointer">
                 Check out some of my latest projects.
               </p>
             </Link>
           </Fade>
         </div>
 
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300">
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 dark:shadow-none">
           <Image src={AboutImg} className="rounded-xl" alt="/" />
         </div>
       </div>

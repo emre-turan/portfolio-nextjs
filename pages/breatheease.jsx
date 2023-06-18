@@ -3,6 +3,7 @@ import React from "react";
 import breatheeaseImg from "../public/assets/projects/breatheease.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
+import BackButton from "../components/BackButton";
 
 const breatheease = () => {
   return (
@@ -43,40 +44,46 @@ const breatheease = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4 mr-8">Code</button>
+            <button className="px-8 py-2 mt-4 mr-8 rounded-lg text-jelly-bean-50 bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-800 hover:from-jelly-bean-600 hover:to-jelly-bean-900 dark:text-jelly-bean-950 dark:from-jelly-bean-50 dark:to-jelly-bean-100">
+              Code
+            </button>
           </a>
           <a
             href="https://breathe-ease.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
-            <button className="px-8 py-2 mt-4">Demo</button>
+            <button className="px-8 py-2 mt-4 mr-8 rounded-lg text-jelly-bean-50 bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-800 hover:from-jelly-bean-600 hover:to-jelly-bean-900 dark:text-jelly-bean-950 dark:from-jelly-bean-50 dark:to-jelly-bean-100">
+              Demo
+            </button>
           </a>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 dark:bg-jelly-bean-50 dark:shadow-jelly-bean-900 hover:-translate-y-1 transform transition-all duration-300">
           <div className="p-2">
-            <p className="text-center font-bold pb-2">Technologies</p>
+            <p className="text-center font-bold pb-2 dark:text-jelly-bean-950">
+              Technologies
+            </p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-jelly-bean-950 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> React
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-jelly-bean-950 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Tailwind
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-jelly-bean-950 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Javascript
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-jelly-bean-950 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Next.js
               </p>
-              <p className="text-gray-600 py-2 flex items-center">
+              <p className="text-jelly-bean-950 py-2 flex items-center">
                 <RiRadioButtonFill className="pr-1" /> Vercel
               </p>
             </div>
           </div>
         </div>
         <Link href="/#projects">
-          <p className="underline cursor-pointer">Back</p>
+          <BackButton />
         </Link>
       </div>
     </div>

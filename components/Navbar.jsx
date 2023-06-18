@@ -5,12 +5,19 @@ import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import NavLogo from "../public/assets/navLogo.svg";
+import DarkNavLogo from "../public/assets/darkNavLogo.svg";
+import { useTheme } from "next-themes";
+import ToggleButton from "./ToggleButton";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#122b3a");
+  const { theme, setTheme } = useTheme();
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
 
   const handleNav = () => {
     setNav(!nav);
@@ -29,25 +36,27 @@ const Navbar = () => {
 
   return (
     <div
-      style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 px-4 md:px-8 lg:px-16"
-          : "fixed w-full h-20 z-[100] px-4 md:px-8 lg:px-16"
+          ? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300 px-4 md:px-8 lg:px-16 bg-jelly-bean-50 dark:bg-jelly-bean-950"
+          : "fixed w-full h-20 z-[100] px-4 md:px-8 lg:px-16 bg-jelly-bean-50 dark:bg-jelly-bean-950"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16 ">
         <Link href="/">
-          <Image
-            src={NavLogo}
-            alt="Emre Turan - Developer Logo"
-            width="125"
-            height="150"
-            className="cursor-pointer"
-          />
+          {mounted && (
+            <Image
+              src={theme === "dark" ? DarkNavLogo : NavLogo}
+              alt="Emre Turan - Developer Logo"
+              width={125}
+              height={125}
+              className="cursor-pointer"
+            />
+          )}
         </Link>
+
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex ">
+          <ul className="hidden md:flex ">
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
               <Link href="/">Home</Link>
             </li>
@@ -75,14 +84,16 @@ const Navbar = () => {
                 Contact
               </Link>
             </li>
+            <li className="ml-10">
+              <ToggleButton />
+            </li>
           </ul>
           {/* Hamburger Icon */}
-          <div
-            style={{ color: `${linkColor}` }}
-            onClick={handleNav}
-            className="md:hidden"
-          >
-            <AiOutlineMenu size={25} />
+          <div className="md:hidden flex">
+            <ToggleButton size={25} />
+            <div onClick={handleNav}>
+              <AiOutlineMenu size={25} className="ml-2" />
+            </div>
           </div>
         </div>
       </div>
@@ -98,18 +109,27 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? " fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#ecf0f3] p-10 ease-in duration-500"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-jelly-bean-50 p-10 ease-in duration-500 dark:bg-jelly-bean-950"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
           <div>
             <div className="flex w-full items-center justify-between">
               <Link href="/">
-                <Image src={NavLogo} width="87" height="35" alt="/" />
+                {mounted && (
+                  <Image
+                    src={theme === "dark" ? DarkNavLogo : NavLogo}
+                    alt="Emre Turan - Developer Logo"
+                    width={100}
+                    height={125}
+                    className="cursor-pointer"
+                  />
+                )}
               </Link>
+
               <div
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
+                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer dark:shadow-jelly-bean-900 dark:bg-jelly-bean-50 dark:text-jelly-bean-900"
               >
                 <AiOutlineClose />
               </div>
@@ -154,7 +174,7 @@ const Navbar = () => {
               </Link>
             </ul>
             <div className="pt-40">
-              <p className="uppercase tracking-widest text-jelly-bean-600">
+              <p className="uppercase tracking-widest text-jelly-bean-600 dark:text-jelly-bean-200">
                 Let&#39;s Connect
               </p>
               <div className="flex items-center justify-between my-4 w-full sm:w-[80%]">
