@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <div id="skills" className="w-full lg:h-screen p-2">
       <Slide direction="up" triggerOnce="true">
-        <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full">
+        <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-4">
           <p className="text-xl tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
             Skills
           </p>
@@ -60,7 +60,7 @@ const Skills = () => {
                     alt="JavaScript logo - one of my skills"
                   />
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div className="flex flex-col items-center justify-center ">
                   <h3>JavaScript</h3>
                 </div>
               </div>

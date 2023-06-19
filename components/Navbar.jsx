@@ -12,7 +12,7 @@ import ToggleButton from "./ToggleButton";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
@@ -32,6 +32,10 @@ const Navbar = () => {
       }
     };
     window.addEventListener("scroll", handleShadow);
+
+    return () => {
+      window.removeEventListener("scroll", handleShadow);
+    };
   }, []);
 
   return (
@@ -46,7 +50,7 @@ const Navbar = () => {
         <Link href="/">
           {mounted && (
             <Image
-              src={theme === "dark" ? DarkNavLogo : NavLogo}
+              src={resolvedTheme === "dark" ? DarkNavLogo : NavLogo}
               alt="Emre Turan - Developer Logo"
               width={125}
               height={125}
@@ -91,9 +95,9 @@ const Navbar = () => {
           {/* Hamburger Icon */}
           <div className="md:hidden flex">
             <ToggleButton size={25} />
-            <div onClick={handleNav}>
+            <button onClick={handleNav}>
               <AiOutlineMenu size={25} className="ml-2" />
-            </div>
+            </button>
           </div>
         </div>
       </div>
@@ -109,7 +113,7 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-jelly-bean-50 p-10 ease-in duration-500 dark:bg-jelly-bean-950"
+              ? "fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-jelly-bean-50 p-10 ease-in duration-500 dark:bg-jelly-bean-950 flex flex-col justify-between"
               : "fixed left-[-100%] top-0 p-10 ease-in duration-500"
           }
         >
@@ -118,21 +122,21 @@ const Navbar = () => {
               <Link href="/">
                 {mounted && (
                   <Image
-                    src={theme === "dark" ? DarkNavLogo : NavLogo}
+                    src={resolvedTheme === "dark" ? DarkNavLogo : NavLogo}
                     alt="Emre Turan - Developer Logo"
-                    width={100}
+                    width={125}
                     height={125}
                     className="cursor-pointer"
                   />
                 )}
               </Link>
 
-              <div
+              <button
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer dark:shadow-jelly-bean-900 dark:bg-jelly-bean-50 dark:text-jelly-bean-900"
               >
                 <AiOutlineClose />
-              </div>
+              </button>
             </div>
             <div className="border-b border-gray-300 my-4">
               <p className="w-[85%] md:w-[90%] py-4">
@@ -173,7 +177,7 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
-            <div className="pt-40">
+            <div className="pt-20">
               <p className="uppercase tracking-widest text-jelly-bean-600 dark:text-jelly-bean-200">
                 Let&#39;s Connect
               </p>
@@ -183,7 +187,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -192,14 +196,14 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
                     <FaGithub />
                   </div>
                 </a>
                 <Link href="/#contact">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900"
                   >
                     <AiOutlineMail />
                   </div>
@@ -207,7 +211,7 @@ const Navbar = () => {
                 <Link href="/resume">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300"
+                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900"
                   >
                     <BsFillPersonLinesFill />
                   </div>

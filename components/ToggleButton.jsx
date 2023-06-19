@@ -5,16 +5,17 @@ import LightModeIcon from "@mui/icons-material/LightMode";
 
 const ToggleButton = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => setMounted(true), []);
 
   return (
     <button
-      onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+      onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       className="transition-all duration-100"
     >
-      {mounted && (theme === "dark" ? <LightModeIcon /> : <DarkModeIcon />)}
+      {mounted &&
+        (resolvedTheme === "dark" ? <LightModeIcon /> : <DarkModeIcon />)}
     </button>
   );
 };

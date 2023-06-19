@@ -8,7 +8,7 @@ import { AttentionSeeker, Fade } from "react-awesome-reveal";
 const Main = () => {
   return (
     <div id="home" className="w-full h-screen text-center">
-      <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center">
+      <div className="max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center ">
         <div>
           <Fade direction="up" triggerOnce="true">
             <p className="uppercase text-sm tracking-widest text-jelly-bean-950 dark:text-jelly-bean-50">
@@ -18,7 +18,7 @@ const Main = () => {
               Hi, I&#39;m <span className="text-jelly-bean-600">Emre</span>
             </h1>
             <h1 className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
-              A Front-End Web Developer
+              Front-End Developer
             </h1>
             <p className="py-4 text-jelly-bean-950 dark:text-jelly-bean-50 sm:max-w-[70%] m-auto">
               I’m focused on building responsive front-end web applications

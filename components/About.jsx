@@ -7,7 +7,7 @@ import { Fade } from "react-awesome-reveal";
 const About = () => {
   return (
     <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
-      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 p-4">
         <div className="col-span-2">
           <Fade direction="left" triggerOnce="true">
             <p className="uppercase text-xl tracking-widest text-jelly-bean-600 dark:text-jelly-bean-300">
@@ -43,7 +43,7 @@ const About = () => {
               development endeavors.
             </p>
 
-            <Link href="/#projects" legacyBehavior>
+            <Link href="/#projects" scroll={false}>
               <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50  underline cursor-pointer">
                 Check out some of my latest projects.
               </p>
@@ -51,8 +51,8 @@ const About = () => {
           </Fade>
         </div>
 
-        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 dark:shadow-none">
-          <Image src={AboutImg} className="rounded-xl" alt="/" />
+        <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-lg flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 dark:shadow-none">
+          <Image src={AboutImg} className="rounded-lg" alt="/" />
         </div>
       </div>
     </div>

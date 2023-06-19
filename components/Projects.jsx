@@ -9,7 +9,7 @@ import { Slide } from "react-awesome-reveal";
 const Projects = () => {
   return (
     <div id="projects" className="w-full">
-      <div className="max-w-[1240px] mx-auto px-2 py-16">
+      <div className="max-w-[1240px] mx-auto px-4 py-16 md:py-6 lg:py-4 xl:py-2">
         <Slide direction="up" triggerOnce="true">
           <p className="text-xl tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
             Projects

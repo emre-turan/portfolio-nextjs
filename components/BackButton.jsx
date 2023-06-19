@@ -4,7 +4,7 @@ const BackButton = () => {
   return (
     <div className="flex">
       <ArrowBackIcon />
-      <p className="underline cursor-pointer">Back</p>
+      <p className=" cursor-pointer">Back</p>
     </div>
   );
 };
