@@ -6,6 +6,7 @@ import {
   FaMediumM,
   FaStackOverflow,
 } from "react-icons/fa";
+import { SiHashnode } from "react-icons/si";
 
 const resume = () => {
   return (
@@ -43,6 +44,14 @@ const resume = () => {
               <FaGithub size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
+              href="https://stackoverflow.com/users/16639320/emre-turan"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
+            >
+              <FaStackOverflow size={20} style={{ marginRight: "1rem" }} />
+            </a>
+            <a
               href="https://medium.com/@itsemreturan"
               target="_blank"
               rel="noreferrer"
@@ -51,12 +60,12 @@ const resume = () => {
               <FaMediumM size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
-              href="https://stackoverflow.com/users/16639320/emre-turan"
+              href="https://emreturan.hashnode.dev/"
               target="_blank"
               rel="noreferrer"
               className="hover:scale-110 ease-in duration-300"
             >
-              <FaStackOverflow size={20} style={{ marginRight: "1rem" }} />
+              <SiHashnode size={20} style={{ marginRight: "1rem" }} />
             </a>
           </div>
         </div>
@@ -161,50 +170,53 @@ const resume = () => {
           </h5>
 
           {/* Experience */}
-          <div className="py-6">
-            <p className="italic">
-              <span className="font-bold">Apple</span>
-            </p>
-            <p className="py-1 italic">
-              iOS Technical Support Advisor (2019 – 2022)
-            </p>
-            <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-              <li>
-                Provided top-notch customer service and technical support as an
-                AppleCare Home Advisor.
-              </li>
-              <li>
-                Successfully resolved a range of complex technical issues with
-                Apple products and services.
-              </li>
-              <li>
-                Gained extensive knowledge and expertise in troubleshooting
-                techniques specific to the Apple ecosystem.
-              </li>
-            </ul>
-          </div>
-          <div className="py-6">
-            <p className="italic">
-              <span className="font-bold">Veeva</span>
-            </p>
-            <p className="py-1 italic">Data Curator (2022 – 2023)</p>
-            <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-              <li>
-                Primarily focusing on data collection. This role required
-                meticulous research on the internet to gather accurate and
-                relevant data.
-              </li>
-              <li>
-                I extensively used Google Sheets for organizing and managing the
-                collected data. This tool was instrumental in maintaining the
-                structure and accessibility of the vast amount of information.
-              </li>
-              <li>
-                Attention to detail was crucial in this role. Ensuring the
-                accuracy and reliability of the data was paramount, as it
-                directly impacted the quality of insights derived from it.
-              </li>
-            </ul>
+          <div className="divide-y divide-gray-700">
+            <div className="py-6">
+              <p className="italic">
+                <span className="font-bold">Apple</span>
+              </p>
+              <p className="py-1 italic">
+                iOS Technical Support Advisor (2019 – 2022)
+              </p>
+              <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+                <li>
+                  Provided top-notch customer service and technical support as
+                  an AppleCare Home Advisor.
+                </li>
+                <li>
+                  Successfully resolved a range of complex technical issues with
+                  Apple products and services.
+                </li>
+                <li>
+                  Gained extensive knowledge and expertise in troubleshooting
+                  techniques specific to the Apple ecosystem.
+                </li>
+              </ul>
+            </div>
+            <div className="py-6">
+              <p className="italic">
+                <span className="font-bold">Veeva</span>
+              </p>
+              <p className="py-1 italic">Data Curator (2022 – 2023)</p>
+              <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
+                <li>
+                  Primarily focusing on data collection. This role required
+                  meticulous research on the internet to gather accurate and
+                  relevant data.
+                </li>
+                <li>
+                  I extensively used Google Sheets for organizing and managing
+                  the collected data. This tool was instrumental in maintaining
+                  the structure and accessibility of the vast amount of
+                  information.
+                </li>
+                <li>
+                  Attention to detail was crucial in this role. Ensuring the
+                  accuracy and reliability of the data was paramount, as it
+                  directly impacted the quality of insights derived from it.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
