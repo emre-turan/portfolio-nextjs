@@ -162,7 +162,7 @@ const Contact = () => {
                       required
                     ></textarea>
                   </div>
-                  <button className="w-full p-4 text-jelly-bean-50 mt-4 shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-700 dark:shadow-none">
+                  <button className="w-full p-4 text-jelly-bean-50 mt-4 shadow-xl shadow-gray-400 rounded-lg uppercase bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-500 dark:shadow-none">
                     Send Message
                   </button>
                 </form>
