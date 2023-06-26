@@ -84,6 +84,9 @@ const Navbar = () => {
               <Link href="/resume">Resume</Link>
             </li>
             <li className="ml-10 text-m border-b border-transparent hover:border-current">
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li className="ml-10 text-m border-b border-transparent hover:border-current">
               <Link href="/#contact" scroll={false}>
                 Contact
               </Link>
@@ -169,6 +172,11 @@ const Navbar = () => {
               <Link href="/resume">
                 <li onClick={() => setNav(false)} className="py-4 text-sm">
                   Resume
+                </li>
+              </Link>
+              <Link href="/blog">
+                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                  Blog
                 </li>
               </Link>
               <Link href="/#contact">
