@@ -100,7 +100,7 @@ const Contact = () => {
                       </label>
                       <input
                         id="name"
-                        className="border-2 rounded-lg p-3 flex border-gray-300 bg-white"
+                        className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-jelly-bean-950"
                         type="text"
                         name="name"
                         required
@@ -115,7 +115,7 @@ const Contact = () => {
                       </label>
                       <input
                         id="phone"
-                        className="border-2 rounded-lg p-3 flex border-gray-300 bg-white"
+                        className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-jelly-bean-950"
                         type="text"
                         name="phone"
                       />
@@ -127,7 +127,7 @@ const Contact = () => {
                     </label>
                     <input
                       id="email"
-                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-white"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-jelly-bean-950"
                       type="email"
                       name="email"
                       required
@@ -142,7 +142,7 @@ const Contact = () => {
                     </label>
                     <input
                       id="subject"
-                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-white"
+                      className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-jelly-bean-950"
                       type="text"
                       name="subject"
                     />
@@ -156,7 +156,7 @@ const Contact = () => {
                     </label>
                     <textarea
                       id="message"
-                      className="border-2 rounded-lg p-3 border-gray-300 bg-white"
+                      className="border-2 rounded-lg p-3 border-gray-300 bg-white text-jelly-bean-950"
                       rows="10"
                       name="message"
                       required
