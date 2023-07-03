@@ -118,6 +118,7 @@ const Contact = () => {
                         className="border-2 rounded-lg p-3 flex border-gray-300 bg-white text-jelly-bean-950"
                         type="text"
                         name="phone"
+                        pattern="\+?[0-9]*"
                       />
                     </div>
                   </div>
@@ -161,6 +162,11 @@ const Contact = () => {
                       name="message"
                       required
                     ></textarea>
+                    <input
+                      type="hidden"
+                      name="_gotcha"
+                      style={{ display: "none" }}
+                    />
                   </div>
                   <button className="w-full p-4 text-jelly-bean-50 mt-4 shadow-xl shadow-gray-400 rounded-lg uppercase bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-500 dark:shadow-none">
                     Send Message
@@ -169,6 +175,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+          {/* scroll to top */}
           <div className="flex justify-center py-12">
             <button onClick={scrollToTop} href="/">
               <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
