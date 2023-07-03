@@ -7,6 +7,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 import ContactImg from "../public/assets/contact.jpg";
 import { Slide } from "react-awesome-reveal";
+import ReCAPTCHA from "react-google-recaptcha";
+import { useState } from "react";
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -16,6 +18,25 @@ const scrollToTop = () => {
 };
 
 const Contact = () => {
+  const [recaptchaCompleted, setRecaptchaCompleted] = useState(false);
+  const [recaptchaError, setRecaptchaError] = useState(false);
+
+  const handleRecaptchaChange = (value) => {
+    if (value) {
+      setRecaptchaCompleted(true);
+      setRecaptchaError(false);
+    } else {
+      setRecaptchaCompleted(false);
+    }
+  };
+
+  const handleSubmit = (event) => {
+    if (!recaptchaCompleted) {
+      event.preventDefault();
+      setRecaptchaError(true);
+    }
+  };
+
   return (
     <Slide direction="up" triggerOnce="true">
       <div id="contact" className="w-full lg:h-screen">
@@ -92,6 +113,7 @@ const Contact = () => {
                   action="https://getform.io/f/8db7eb7a-7da9-4044-90c6-27d5bdd44a1e"
                   method="POST"
                   encType="multipart/form-data"
+                  onSubmit={handleSubmit}
                 >
                   <div className="grid md:grid-cols-2 gap-4 w-full py-2">
                     <div className="flex flex-col">
@@ -168,6 +190,21 @@ const Contact = () => {
                       style={{ display: "none" }}
                     />
                   </div>
+                  <div className="py-2">
+                    <ReCAPTCHA
+                      sitekey="6LdbL-8mAAAAAD2zB5LTEjqVRhI3Lag7Urdg2x2m"
+                      onChange={handleRecaptchaChange}
+                    />
+                    {recaptchaError && (
+                      <p
+                        className="py-2 font-semibold"
+                        style={{ color: "red" }}
+                      >
+                        Please complete the reCAPTCHA.
+                      </p>
+                    )}
+                  </div>
+
                   <button className="w-full p-4 text-jelly-bean-50 mt-4 shadow-xl shadow-gray-400 rounded-lg uppercase bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-500 dark:shadow-none">
                     Send Message
                   </button>
