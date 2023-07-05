@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "../public/assets/about-3.png";
+import AboutImg from "../public/assets/about.png";
 import { Fade } from "react-awesome-reveal";
 
 const About = () => {
