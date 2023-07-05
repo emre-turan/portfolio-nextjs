@@ -55,7 +55,7 @@ const Blog = () => {
             const formattedDate = date.toDateString();
             return (
               <div key={index}>
-                <p className="py-1 font-bold italic">
+                <p className="py-1 font-medium italic tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
                   <a href={post.link} target="_blank" rel="noreferrer">
                     {post.title}
                   </a>
