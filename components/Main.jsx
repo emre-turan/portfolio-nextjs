@@ -32,7 +32,7 @@ const Main = () => {
                   rel="noreferrer"
                   aria-label="LinkedIn"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900 ">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none ">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -42,17 +42,17 @@ const Main = () => {
                   rel="noreferrer"
                   aria-label="GitHub"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
+                  <div className="rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none ">
                     <FaGithub />
                   </div>
                 </a>
                 <Link href="/#contact" scroll={false} aria-label="Contact">
-                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none ">
                     <AiOutlineMail />
                   </div>
                 </Link>
                 <Link href="/resume" aria-label="Resume">
-                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-6 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none ">
                     <BsFillPersonLinesFill />
                   </div>
                 </Link>

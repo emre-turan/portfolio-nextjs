@@ -69,7 +69,7 @@ const Contact = () => {
                   </p>
                 </div>
                 <div>
-                  <div className="flex items-center justify-between py-4">
+                  <div className="flex items-center justify-between py-4 lg:mt-16">
                     <a
                       href="https://www.linkedin.com/in/emre-turan/"
                       target="_blank"

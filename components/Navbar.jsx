@@ -61,37 +61,37 @@ const Navbar = () => {
 
         <div>
           <ul className="hidden md:flex ">
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/">Home</Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/#about" scroll={false}>
                 About
               </Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/#skills" scroll={false}>
                 {" "}
                 Skills
               </Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/#projects" scroll={false}>
                 Projects
               </Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/resume">Resume</Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/blog">Blog</Link>
             </li>
-            <li className="ml-10 text-m border-b border-transparent hover:border-current">
+            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
               <Link href="/#contact" scroll={false}>
                 Contact
               </Link>
             </li>
-            <li className="ml-10">
+            <li className="ml-10  dark:text-gray-300">
               <ToggleButton />
             </li>
           </ul>
@@ -148,44 +148,65 @@ const Navbar = () => {
             </div>
           </div>
           <div className="py-4 flex flex-col">
-            <ul className="uppercase">
+            <ul className="uppercase ">
               <Link href="/">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Home
                 </li>
               </Link>
               <Link href="/#about">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   About
                 </li>
               </Link>
               <Link href="/#skills">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Projects
                 </li>
               </Link>
               <Link href="/resume">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Resume
                 </li>
               </Link>
               <Link href="/blog">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Blog
                 </li>
               </Link>
               <Link href="/#contact">
-                <li onClick={() => setNav(false)} className="py-4 text-sm">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
                   Contact
                 </li>
               </Link>
             </ul>
-            <div className="pt-20">
+            <div className="py-10">
               <p className="uppercase tracking-widest text-jelly-bean-600 dark:text-jelly-bean-200">
                 Let&#39;s Connect
               </p>
@@ -195,7 +216,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none">
                     <FaLinkedinIn />
                   </div>
                 </a>
@@ -204,14 +225,14 @@ const Navbar = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900">
+                  <div className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none">
                     <FaGithub />
                   </div>
                 </a>
                 <Link href="/#contact">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900"
+                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none"
                   >
                     <AiOutlineMail />
                   </div>
@@ -219,7 +240,7 @@ const Navbar = () => {
                 <Link href="/resume">
                   <div
                     onClick={() => setNav(!nav)}
-                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-jelly-bean-900"
+                    className="rounded-full shadow-lg shadow-gray-400  p-3 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none"
                   >
                     <BsFillPersonLinesFill />
                   </div>
