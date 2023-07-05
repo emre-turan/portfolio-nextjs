@@ -8,7 +8,7 @@ const font = Urbanist({ subsets: ["latin"] });
 function MyApp({ Component, pageProps }) {
   return (
     <main className={font.className}>
-      <ThemeProvider attribute="class">
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         <Navbar />
         <Component {...pageProps} />
         <Analytics />

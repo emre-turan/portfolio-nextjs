@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import AboutImg from "../public/assets/about.jpg";
+import AboutImg from "../public/assets/about-3.png";
 import { Fade } from "react-awesome-reveal";
 
 const About = () => {
@@ -18,36 +18,29 @@ const About = () => {
             </h2>
 
             <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
-              As a dedicated web developer, my focus lies in constructing
-              mobile-responsive front-end UI applications. These applications
-              are adept at interfacing with APIs and other backend technologies,
-              ensuring seamless interaction and functionality. I am well-versed
-              in creating such applications using an array of tools such as
-              HTML, CSS, JavaScript, Next and React. These languages and
-              libraries form the core of my skillset, enabling me to develop
-              efficient and visually appealing user interfaces that deliver on
-              user expectations.
+              Based in the vibrant city of Izmir, Turkey, I am a university
+              graduate turned dedicated web developer. My journey in the tech
+              world is as exciting and dynamic as my 8-year stint as a
+              professional musician, DJ, and producer in the realm of electronic
+              music. Just as I create harmonious tunes, I construct
+              mobile-responsive front-end UI applications that ensure seamless
+              interaction and functionality. My tools of the trade include HTML,
+              CSS, JavaScript, Next, and React, which I use to develop efficient
+              and visually appealing user interfaces.
             </p>
             <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
-              However, my passion for this field extends beyond these familiar
-              technologies. I have a deep enthusiasm for learning and exploring
-              new technologies that can enhance the development process. I
-              understand that in the world of programming, there&apos;s more
-              than one method to achieve a desired outcome. This open-minded
-              perspective allows me to be a quick learner, ready to embrace and
-              master new tech stacks as needed. Furthermore, I firmly believe
-              that being a great developer is less about proficiency in a
-              specific language and more about the ability to select and
-              leverage the best tool for the job. This approach underscores my
-              commitment to delivering the best possible solutions in all my
-              development endeavors.
+              My passion for web development, much like my love for music, TV
+              series, movies, and wellness, goes beyond the familiar. I am
+              always eager to learn and explore new technologies that can
+              enhance the development process. I understand that in the world of
+              programming, just as in music, there&apos;s more than one method
+              to create a masterpiece. This open-minded perspective makes me a
+              quick learner, ready to embrace and master new tech stacks as
+              needed. I firmly believe that being a great developer, much like
+              being a great musician, is less about proficiency in a specific
+              language and more about the ability to select and leverage the
+              best tool for the job.
             </p>
-
-            <Link href="/#projects" scroll={false}>
-              <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50  underline cursor-pointer">
-                Check out some of my latest projects.
-              </p>
-            </Link>
           </Fade>
         </div>
 

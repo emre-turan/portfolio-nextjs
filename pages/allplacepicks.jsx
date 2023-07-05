@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import allplacepicksImg from "../public/assets/projects/allplacepicks.png";
 import { RiRadioButtonFill } from "react-icons/ri";
-import Link from "next/link";
 import BackButton from "../components/BackButton";
 
 const allplacepicks = () => {
@@ -84,9 +83,9 @@ const allplacepicks = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
+       
           <BackButton />
-        </Link>
+       
       </div>
     </div>
   );

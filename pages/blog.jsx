@@ -1,6 +1,5 @@
 import Head from "next/head";
-import React, { useState } from "react";
-import Parser from "rss-parser";
+import React, { useState, useEffect } from "react";
 import Pagination from "@mui/material/Pagination";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -13,8 +12,19 @@ const theme = createTheme({
   },
 });
 
-const Blog = ({ posts }) => {
+const Blog = () => {
+  const [posts, setPosts] = useState([]);
   const [page, setPage] = useState(1);
+
+  useEffect(() => {
+    const fetchPosts = async () => {
+      const res = await fetch("/api/posts");
+      const data = await res.json();
+      setPosts(data);
+    };
+
+    fetchPosts();
+  }, []);
 
   const handleChange = (event, value) => {
     setPage(value);
@@ -71,16 +81,5 @@ const Blog = ({ posts }) => {
     </>
   );
 };
-
-export async function getServerSideProps() {
-  const parser = new Parser();
-  const feed = await parser.parseURL("https://medium.com/feed/@itsemreturan");
-  const posts = feed.items;
-  return {
-    props: {
-      posts,
-    },
-  };
-}
 
 export default Blog;

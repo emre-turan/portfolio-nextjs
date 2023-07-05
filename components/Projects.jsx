@@ -1,10 +1,11 @@
 import React from "react";
 import allplacepicksImg from "../public/assets/projects/allplacepicks.png";
-import oldportfolioImg from "../public/assets/projects/oldportfolio.png";
+import ecommerceImg from "../public/assets/projects/ecommerce.png";
 import breatheeaseImg from "../public/assets/projects/breatheease.png";
-import appletreeImg from "../public/assets/projects/appletree.png";
+import admindashboardImg from "../public/assets/projects/admindashboard.png";
 import ProjectItem from "./ProjectItem";
 import { Slide } from "react-awesome-reveal";
+import Link from "next/link";
 
 const Projects = () => {
   return (
@@ -19,34 +20,44 @@ const Projects = () => {
         <Slide direction="up" triggerOnce="true">
           <div className="grid md:grid-cols-2 gap-8">
             <ProjectItem
+              title="Sleek E-Commerce"
+              backgroundImg={ecommerceImg}
+              projectUrl="/ecommerce"
+              tech="React | Next.js | Typescript | Stripe "
+            />
+
+            <ProjectItem
+              title="E-Commerce Dashboard"
+              backgroundImg={admindashboardImg}
+              projectUrl="/admindashboard"
+              tech="React | Next.js | Typescript | MySQL"
+            />
+            <ProjectItem
               title="All Place Picks"
               backgroundImg={allplacepicksImg}
               projectUrl="/allplacepicks"
-              tech="React JS"
+              tech="React | Next.js  | Typescript | MongoDB"
             />
 
             <ProjectItem
               title="Breathe Ease"
               backgroundImg={breatheeaseImg}
               projectUrl="/breatheease"
-              tech="React JS"
-            />
-
-            <ProjectItem
-              title="Old Portfolio"
-              backgroundImg={oldportfolioImg}
-              projectUrl="/oldportfolio"
-              tech="Express JS"
-            />
-
-            <ProjectItem
-              title="Apple Tree"
-              backgroundImg={appletreeImg}
-              projectUrl="/appletree"
-              tech="React JS | Redux"
+              tech="React | Next.js | Typescript"
             />
           </div>
         </Slide>
+        <div className="flex justify-center p-2 m-2">
+          <a
+            href="https://github.com/etdesign"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <button className=" px-8 py-4 mt-4 text-jelly-bean-50 shadow-xl shadow-gray-400 rounded-lg bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-500 dark:shadow-none">
+              See More
+            </button>
+          </a>
+        </div>
       </div>
     </div>
   );

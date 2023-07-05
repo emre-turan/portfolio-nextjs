@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import breatheeaseImg from "../public/assets/projects/breatheease.png";
 import { RiRadioButtonFill } from "react-icons/ri";
-import Link from "next/link";
 import BackButton from "../components/BackButton";
 
 const breatheease = () => {
@@ -80,9 +79,7 @@ const breatheease = () => {
             </div>
           </div>
         </div>
-        <Link href="/#projects">
-          <BackButton />
-        </Link>
+        <BackButton />
       </div>
     </div>
   );
