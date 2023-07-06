@@ -46,7 +46,11 @@ const ecommerce = () => {
               Code
             </button>
           </a>
-          <a href="ecommerce-sleek.vercel.app" target="_blank" rel="noreferrer">
+          <a
+            href="https://ecommerce-sleek.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <button className="px-8 py-2 mt-4 mr-8 text-jelly-bean-50 shadow-xl shadow-gray-400 rounded-lg bg-gradient-to-r from-jelly-bean-500 to-jelly-bean-600 hover:from-jelly-bean-600 hover:to-jelly-bean-500 dark:shadow-none">
               Demo
             </button>
