@@ -5,7 +5,6 @@ import breatheeaseImg from "../public/assets/projects/breatheease.png";
 import admindashboardImg from "../public/assets/projects/admindashboard.png";
 import ProjectItem from "./ProjectItem";
 import { Slide } from "react-awesome-reveal";
-import Link from "next/link";
 
 const Projects = () => {
   return (
