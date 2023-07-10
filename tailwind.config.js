@@ -1,5 +1,5 @@
 module.exports = {
-  darkMode: "class",
+  darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
@@ -9,7 +9,7 @@ module.exports = {
       colors: {
         "custom-blue": "#27799C",
         "custom-teal": "#B3D1DD",
-        "custom-gray":"#97A3B6",
+        "custom-gray": "#97A3B6",
         "jelly-bean": {
           50: "#effafc",
           100: "#d7f0f6",
