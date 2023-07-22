@@ -1,5 +1,5 @@
 import Head from "next/head";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Pagination from "@mui/material/Pagination";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 
@@ -12,19 +12,9 @@ const theme = createTheme({
   },
 });
 
-const Blog = () => {
-  const [posts, setPosts] = useState([]);
+const Blog = ({ initialPosts }) => {
+  const [posts, setPosts] = useState(initialPosts);
   const [page, setPage] = useState(1);
-
-  useEffect(() => {
-    const fetchPosts = async () => {
-      const res = await fetch("/api/posts");
-      const data = await res.json();
-      setPosts(data);
-    };
-
-    fetchPosts();
-  }, []);
 
   const handleChange = (event, value) => {
     setPage(value);
@@ -83,3 +73,20 @@ const Blog = () => {
 };
 
 export default Blog;
+
+const API_URL =
+  process.env.NODE_ENV === "development"
+    ? process.env.NEXT_PUBLIC_API_URL_DEVELOPMENT
+    : process.env.NEXT_PUBLIC_API_URL_PRODUCTION;
+
+export async function getStaticProps() {
+  const res = await fetch(`${API_URL}/api/posts`);
+  const initialPosts = await res.json();
+
+  return {
+    props: {
+      initialPosts,
+    },
+    revalidate: 1,
+  };
+}

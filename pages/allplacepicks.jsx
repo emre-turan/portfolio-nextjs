@@ -15,7 +15,7 @@ const allplacepicks = () => {
           src={allplacepicksImg}
           alt="All Place Picks - A web application showcasing businesses worldwide"
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-jelly-bean-50 z-10 p-2">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-jelly-bean-50 z-10 p-4">
           <h2 className="px-4 py-2"> All Place Picks </h2>
           <h3 className="px-4"> React JS / Tailwind / Next.js </h3>
         </div>
@@ -83,9 +83,8 @@ const allplacepicks = () => {
             </div>
           </div>
         </div>
-       
-          <BackButton />
-       
+
+        <BackButton />
       </div>
     </div>
   );

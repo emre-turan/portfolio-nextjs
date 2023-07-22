@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
-import breatheeaseImg from "../public/assets/projects/breatheease.png";
+import appletreeImg from "../public/assets/projects/appletree.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import BackButton from "../components/BackButton";
 
-const breatheease = () => {
+const appletree = () => {
   return (
     <div className="w-full">
       <div className="w-screen h-[50vh] relative">
@@ -12,12 +12,12 @@ const breatheease = () => {
         <Image
           className="absolute z-1 object-cover"
           fill="true"
-          src={breatheeaseImg}
-          alt="Breathe Ease App - A user-friendly web app for guided breathing exercises"
+          src={appletreeImg}
+          alt="Apple Tree - A user-friendly web app for the demonstrate state management skills with Redux"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
-          <h2 className="px-4 py-2">Breathe Ease App</h2>
-          <h3 className="px-4">React JS / Tailwind / Next.js </h3>
+          <h2 className="px-4 py-2">Apple Tree</h2>
+          <h3 className="px-4">React JS / Next.js / Redux </h3>
         </div>
       </div>
 
@@ -26,20 +26,18 @@ const breatheease = () => {
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p className="py-2">
-            I built this application in React JS and is hosted on Vercel.
-            Breathe-Ease is a simple and user-friendly web app designed to guide
-            you through breathing exercises that help reduce stress, improve
-            focus, and promote relaxation.
+            This application is a simple interactive game built with Next.js,
+            React, Redux, and Tailwind CSS. Hosted on Vercel.
           </p>
           <p className="py-2">
-            To use Breathe-Ease, simply select a breathing method, follow the
-            on-screen instructions, and start the exercise by clicking the
-            &quot;Start&quot; button. The app will guide you through the inhale,
-            hold, and exhale phases of the chosen technique, helping you
-            maintain a consistent rhythm and focus on your breath.
+            The application consists of four main components: a tree, apples, a
+            basket, and a button. The user can shake the tree by clicking either
+            on the tree itself or the button. When the tree is shaken, apples
+            fall to the ground at random intervals and in random quantities.
+            It&apos;s possible that no apples may fall on the first shake!
           </p>
           <a
-            href="https://github.com/etdesign/breathe-ease"
+            href="https://github.com/etdesign/apple-tree"
             target="_blank"
             rel="noreferrer"
           >
@@ -48,7 +46,7 @@ const breatheease = () => {
             </button>
           </a>
           <a
-            href="https://breathe-ease.vercel.app/"
+            href="https://apple-tree.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
@@ -74,7 +72,7 @@ const breatheease = () => {
                 <RiRadioButtonFill className="pr-1" /> Next.js
               </p>
               <p className="py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> Vercel
+                <RiRadioButtonFill className="pr-1" /> Redux
               </p>
             </div>
           </div>
@@ -85,4 +83,4 @@ const breatheease = () => {
   );
 };
 
-export default breatheease;
+export default appletree;

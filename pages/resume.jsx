@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaMediumM,
   FaStackOverflow,
+  FaExternalLinkAlt,
 } from "react-icons/fa";
 import { SiHashnode } from "react-icons/si";
 
@@ -27,6 +28,14 @@ const resume = () => {
         <div className="bg-jelly-bean-50 text-jelly-bean-950 my-4 p-4 w-full flex justify-between items-center rounded-lg dark:text-jelly-bean-50 dark:bg-jelly-bean-950 border dark:border-gray-700">
           <h2 className="text-center">Emre Turan</h2>
           <div className="flex ">
+            <a
+              href="https://flowcv.com/resume/e55f0m216c"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:scale-110 ease-in duration-300"
+            >
+              <FaExternalLinkAlt size={20} style={{ marginRight: "1rem" }} />
+            </a>
             <a
               href="https://www.linkedin.com/in/emre-turan/"
               target="_blank"
@@ -73,13 +82,11 @@ const resume = () => {
           <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
             <div className="hidden sm:block">
               <p>
-                Creativity <span className="px-1">|</span> Web Development{" "}
-                <span className="px-1">|</span> Simplicity
+                Creativity <span className="px-1">|</span> Simplicity
               </p>
             </div>
             <div className="block sm:hidden">
               <p>Creativity </p>
-              <p className="py-2">Web Development</p>
               <p>Simplicity</p>
             </div>
           </div>

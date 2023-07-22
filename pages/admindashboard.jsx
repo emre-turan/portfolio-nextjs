@@ -16,7 +16,7 @@ const admindashboard = () => {
           src={admindashboardImg}
           alt="E-Commerce - A comprehensive e-commerce solution with a fully functional admin dashboard, CMS, and API."
         />
-        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[ 50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2">
+        <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[ 50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-4">
           <h2 className="px-4 py-2">E-Commerce Admin Dashboard CMS</h2>
           <h3 className="px-4">React / Typescript / Next.js </h3>
         </div>

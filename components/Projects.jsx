@@ -3,6 +3,8 @@ import allplacepicksImg from "../public/assets/projects/allplacepicks.png";
 import ecommerceImg from "../public/assets/projects/ecommerce.png";
 import breatheeaseImg from "../public/assets/projects/breatheease.png";
 import admindashboardImg from "../public/assets/projects/admindashboard.png";
+import appletreeImg from "../public/assets/projects/appletree.png";
+import aisaasImg from "../public/assets/projects/aisaas.png";
 import ProjectItem from "./ProjectItem";
 import { Slide } from "react-awesome-reveal";
 
@@ -32,6 +34,12 @@ const Projects = () => {
               tech="React | Next.js | Typescript | MySQL"
             />
             <ProjectItem
+              title="AI SaaS"
+              backgroundImg={aisaasImg}
+              projectUrl="/ai-saas"
+              tech="React | Next.js | Typescript | MySQL"
+            />
+            <ProjectItem
               title="All Place Picks"
               backgroundImg={allplacepicksImg}
               projectUrl="/allplacepicks"
@@ -43,6 +51,13 @@ const Projects = () => {
               backgroundImg={breatheeaseImg}
               projectUrl="/breatheease"
               tech="React | Next.js | Typescript"
+            />
+
+            <ProjectItem
+              title="Apple Tree"
+              backgroundImg={appletreeImg}
+              projectUrl="/appletree"
+              tech="React | Next.js | Redux"
             />
           </div>
         </Slide>
