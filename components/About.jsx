@@ -50,7 +50,7 @@ const About = () => {
               src={AboutImg}
               className="rounded-lg"
               alt="Emre played DJ set on nightclub"
-              priority
+              placeholder="blur"
             />
           </div>
         </div>

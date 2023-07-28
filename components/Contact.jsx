@@ -57,6 +57,7 @@ const Contact = () => {
                     alt="Contact image"
                     width={500}
                     height={500}
+                    placeholder="blur"
                   />
                 </div>
 
