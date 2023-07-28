@@ -19,7 +19,7 @@ const About = () => {
               Who I Am
             </h2>
 
-            <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
+            <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50 ">
               Based in the vibrant city of Izmir, Turkey, I am a university
               graduate turned dedicated web developer. My journey in the tech
               world is as exciting and dynamic as my 8-year stint as a

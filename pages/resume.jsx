@@ -68,52 +68,41 @@ const resume = () => {
             >
               <FaMediumM size={20} style={{ marginRight: "1rem" }} />
             </a>
-            <a
-              href="https://emreturan.hashnode.dev/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:scale-110 ease-in duration-300"
-            >
-              <SiHashnode size={20} style={{ marginRight: "1rem" }} />
-            </a>
           </div>
         </div>
         <div className="my-4 p-4 rounded-lg border dark:border-gray-700">
-          <div className="text-center py-4 text-xl font-bold uppercase tracking-wider">
-            <div className="hidden sm:block">
-              <p>
-                Creativity <span className="px-1">|</span> Simplicity
-              </p>
-            </div>
-            <div className="block sm:hidden">
-              <p>Creativity </p>
-              <p>Simplicity</p>
-            </div>
-          </div>
+          <h5 className="text-center underline text-[18px] py-2 ">Bio</h5>
           <p>
-            As a junior web developer, I am highly motivated and always eager to
-            learn new skills. I possess a cheerful and attentive disposition,
-            and my discipline and creativity enable me to tackle even the most
-            complex challenges. I can work effectively both individually and as
-            part of a team, ensuring that every project is completed to the
-            highest standards. My diverse tech stack encompasses various
-            technologies for specific areas of web development. I am capable of
-            delivering innovative and impactful solutions tailored to each
-            project&apos;s unique requirements. I am confident that my passion
-            for web development and commitment to excellence will contribute to
-            the success of any project I am involved in, whether working
-            independently or as part of a team.
+            Based in the vibrant city of Izmir, Turkey, I am a university
+            graduate turned dedicated web developer. My journey in the tech
+            world is as exciting and dynamic as my 8-year stint as a
+            professional musician, DJ, and producer in the realm of electronic
+            music. Just as I create harmonious tunes, I construct
+            mobile-responsive front-end UI applications that ensure seamless
+            interaction and functionality. My tools of the trade include HTML,
+            CSS, JavaScript, Next, and React, which I use to develop efficient
+            and visually appealing user interfaces.
+          </p>
+          <p>
+            My passion for web development, much like my love for music, TV
+            series, movies, and wellness, goes beyond the familiar. I am always
+            eager to learn and explore new technologies that can enhance the
+            development process. I understand that in the world of programming,
+            just as in music, there&apos;s more than one method to create a
+            masterpiece. This open-minded perspective makes me a quick learner,
+            ready to embrace and master new tech stacks as needed. I firmly
+            believe that being a great developer, much like being a great
+            musician, is less about proficiency in a specific language and more
+            about the ability to select and leverage the best tool for the job.
           </p>
         </div>
 
         {/* Skills */}
         <div className="text-center p-4 my-4 border rounded-lg dark:border-gray-700">
-          <h5 className="text-center underline text-[18px] py-2 ">Skills</h5>
+          <h5 className="text-center underline text-[18px] py-2 ">
+            Tech Stack
+          </h5>
           <div className="flex flex-wrap justify-center py-2">
-            <span className="font-bold">Technical Skills</span>
-            <span className="px-2">|</span>
-            <span>Front-End Web Developer</span>
-            <span className="px-2">|</span>
             <span>HTML</span>
             <span className="px-2">|</span>
             <span>CSS</span>
@@ -125,6 +114,8 @@ const resume = () => {
             <span>React</span>
             <span className="px-2">|</span>
             <span>Nextjs</span>
+            <span className="px-2">|</span>
+            <span>MySQL</span>
             <span className="px-2">|</span>
             <span>MongoDB</span>
             <span className="px-2">|</span>
@@ -140,87 +131,64 @@ const resume = () => {
             Professional Experience
           </h5>
           {/* Experience */}
-          <div className="py-6">
-            <p className="italic">
-              <span className="font-bold italic">The Project</span>
-            </p>
-            <p className="py-1 italic">
-              Full Stack Web Developer (2023 - Current)
-            </p>
-            <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
-              <li>
-                As a Full-Stack Developer at The Project, an innovative
-                advertising agency, I create and manage dynamic web-based
-                solutions, effectively transforming creative ideas into live
-                digital experiences.
-              </li>
-              <li>
-                I collaboratively work with various agency teams to develop
-                custom applications, focusing on both frontend user interfaces
-                and robust backend systems tailored to meet the unique
-                requirements of our diverse clientele.
-              </li>
-              <li>
-                Beyond client-based projects, I contribute significantly to the
-                development of The Project&apos;s in-house initiatives,
-                leveraging my technical prowess to drive innovation and
-                efficiency, thereby strengthening our agency&apos;s digital
-                infrastructure and capabilities.
-              </li>
-            </ul>
-          </div>
-
-          {/* Personal Experience */}
-
-          <h5 className="text-center underline text-[18px] py-4">
-            Other Professional Experience
-          </h5>
-
-          {/* Experience */}
           <div className="divide-y divide-gray-700">
             <div className="py-6">
-              <p className="italic">
-                <span className="font-bold">Apple</span>
+              <p>
+                <span className="font-bold">
+                  Full Stack Web Developer (2023 - Current)
+                </span>
               </p>
-              <p className="py-1 italic">
-                iOS Technical Support Advisor (2019 – 2022)
-              </p>
+              <p className="py-1 italic">The Project - Freelance - Remote </p>
               <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
                 <li>
-                  Provided top-notch customer service and technical support as
-                  an AppleCare Home Advisor.
+                  Collaborating closely with the agency and its clients. I
+                  identify web-based needs and develop tailored solutions. My
+                  responsibilities encompass end-to-end project development,
+                  from initial concept to final implementation, ensuring the
+                  delivery of high-quality, customer-centric digital
+                  experiences.
                 </li>
                 <li>
-                  Successfully resolved a range of complex technical issues with
-                  Apple products and services.
-                </li>
-                <li>
-                  Gained extensive knowledge and expertise in troubleshooting
-                  techniques specific to the Apple ecosystem.
+                  In addition to these responsibilities, I&apos;ve had the
+                  opportunity to work on a variety of projects, including an
+                  AI-SaaS platform and an E-commerce project. These experiences
+                  have allowed me to expand my skills in AI integration and
+                  E-commerce solutions, further enhancing the quality and
+                  versatility of the digital experiences I deliver.
                 </li>
               </ul>
             </div>
             <div className="py-6">
-              <p className="italic">
-                <span className="font-bold">Veeva</span>
+              <p>
+                <span className="font-bold">Data Curator (2022 – 2023)</span>
               </p>
-              <p className="py-1 italic">Data Curator (2022 – 2023)</p>
+              <p className="py-1 italic"> Veeva - Freelance - Remote </p>
               <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
                 <li>
-                  Primarily focusing on data collection. This role required
-                  meticulous research on the internet to gather accurate and
-                  relevant data.
+                  During this period, I made a strategic decision to transition
+                  my career towards web development. I dedicated my time to
+                  upskilling, learning new technologies, and honing my coding
+                  skills. This time was invaluable in allowing me to refocus my
+                  career path and prepare for new opportunities in web
+                  development.
                 </li>
+              </ul>
+            </div>
+            <div className="py-6">
+              <p>
+                <span className="font-bold">
+                  iOS Technical Support Specialist (2019 – 2022)
+                </span>
+              </p>
+              <p className="py-1 italic">Apple - Full Time - Remote </p>
+              <ul className="list-disc list-outside px-7 py-1 leading-relaxed">
                 <li>
-                  I extensively used Google Sheets for organizing and managing
-                  the collected data. This tool was instrumental in maintaining
-                  the structure and accessibility of the vast amount of
-                  information.
-                </li>
-                <li>
-                  Attention to detail was crucial in this role. Ensuring the
-                  accuracy and reliability of the data was paramount, as it
-                  directly impacted the quality of insights derived from it.
+                  I acted as a bridge between engineers and users, simplifying
+                  complex technical concepts into user-friendly solutions. This
+                  role enhanced my communication skills and fostered a deep
+                  appreciation for the importance of understanding user needs
+                  and expectations, a crucial aspect of creating effective
+                  digital experiences.
                 </li>
               </ul>
             </div>
