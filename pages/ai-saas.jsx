@@ -40,7 +40,7 @@ const aisaas = () => {
             learning, experimentation, and growth.
           </p>
           <a
-            href="https://github.com/etdesign/ecommerce-sleek"
+            href="https://github.com/etdesign/ai-saas-clarity"
             target="_blank"
             rel="noreferrer"
           >
@@ -49,7 +49,7 @@ const aisaas = () => {
             </button>
           </a>
           <a
-            href="https://ecommerce-sleek.vercel.app/"
+            href="https://ai-saas-clarity.vercel.app/"
             target="_blank"
             rel="noreferrer"
           >
