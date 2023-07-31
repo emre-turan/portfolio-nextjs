@@ -22,7 +22,7 @@ const allplacepicks = () => {
       </div>
 
       <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 py-8 px-4">
-        <div className="col-span-4 border rounded-lg dark:border-gray-700 p-4">
+        <div className="col-span-4 border shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <p>Project</p>
           <h2 className="py-2">Overview</h2>
           <p className="py-2">
@@ -55,7 +55,7 @@ const allplacepicks = () => {
             </button>
           </a>
         </div>
-        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4 dark:border  dark:bg-jelly-bean-950 dark: border-gray-700 dark:text-jelly-bean-50 dark:shadow-none">
+        <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <div className="px-4">
             <p className="text-center font-bold pb-2 ">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
@@ -84,7 +84,7 @@ const allplacepicks = () => {
           </div>
         </div>
 
-        <BackButton />
+        <BackButton href="/#projects" />
       </div>
     </div>
   );

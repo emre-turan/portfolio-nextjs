@@ -36,10 +36,10 @@ const Blog = ({ initialPosts }) => {
         <link rel="icon" href="/fav.png" />
       </Head>
       <div className="max-w-[940px] mx-auto p-5 pt-[120px]">
-        <h2 className="text-center shadow-md bg-jelly-bean-50 text-jelly-bean-950 my-4 p-4 w-full rounded-lg dark:text-jelly-bean-50 dark:bg-jelly-bean-950 border dark:border-gray-700 ">
+        <h2 className="text-center bg-jelly-bean-50 text-jelly-bean-950 my-4 p-4 w-full dark:text-jelly-bean-50 dark:bg-jelly-bean-950 border shadow-xl shadow-gray-400 rounded-2xl dark:shadow-2xl dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70 ">
           Blog Posts
         </h2>
-        <div className="text-center p-4 my-4 border rounded-lg divide-y divide-gray-700 shadow-lg shadow-gray-400  dark:shadow-jelly-bean-900 dark:shadow-none dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700">
+        <div className="text-center p-4 my-4 divide-y divide-gray-700 border shadow-xl shadow-gray-400 rounded-2xl dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           {paginatedPosts.map((post, index) => {
             const date = new Date(post.pubDate);
             const formattedDate = date.toDateString();

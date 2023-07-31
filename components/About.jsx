@@ -45,10 +45,10 @@ const About = () => {
             </p>
           </div>
 
-          <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-lg flex items-center justify-center p-2 hover:scale-105 ease-in duration-300 dark:shadow-none">
+          <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-lg flex items-center justify-center dark:shadow-none mt-4 overflow-hidden">
             <Image
               src={AboutImg}
-              className="rounded-lg"
+              className="transition duration-300 ease-in-out hover:scale-110"
               alt="Emre played DJ set on nightclub"
               placeholder="blur"
             />

@@ -7,7 +7,7 @@ import {
   FaStackOverflow,
   FaExternalLinkAlt,
 } from "react-icons/fa";
-import { SiHashnode } from "react-icons/si";
+import BackButton from "../components/BackButton";
 
 const resume = () => {
   return (
@@ -25,7 +25,7 @@ const resume = () => {
         <h2 className="text-center text-jelly-bean-950 dark:text-jelly-bean-50 ">
           Resume
         </h2>
-        <div className="bg-jelly-bean-50 text-jelly-bean-950 my-4 p-4 w-full flex justify-between items-center rounded-lg dark:text-jelly-bean-50 dark:bg-jelly-bean-950 border dark:border-gray-700">
+        <div className="bg-jelly-bean-50 text-jelly-bean-950 my-4 p-4 w-full flex justify-between items-center border shadow-xl shadow-gray-400 rounded-2xl dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <h2 className="text-center">Emre Turan</h2>
           <div className="flex ">
             <a
@@ -70,7 +70,7 @@ const resume = () => {
             </a>
           </div>
         </div>
-        <div className="my-4 p-4 rounded-lg border dark:border-gray-700">
+        <div className="my-4 border shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <h5 className="text-center underline text-[18px] py-2 ">Bio</h5>
           <p>
             Based in the vibrant city of Izmir, Turkey, I am a university
@@ -98,7 +98,7 @@ const resume = () => {
         </div>
 
         {/* Skills */}
-        <div className="text-center p-4 my-4 border rounded-lg dark:border-gray-700">
+        <div className="text-center my-4 border shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <h5 className="text-center underline text-[18px] py-2 ">
             Tech Stack
           </h5>
@@ -126,7 +126,7 @@ const resume = () => {
             <span>Bootstrap</span>
           </div>
         </div>
-        <div className="p-4 my-4 border rounded-lg dark:border-gray-700">
+        <div className="my-4 border shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
           <h5 className="text-center underline text-[18px] py-4">
             Professional Experience
           </h5>
@@ -194,6 +194,7 @@ const resume = () => {
             </div>
           </div>
         </div>
+        <BackButton href="/" />
       </div>
     </>
   );
