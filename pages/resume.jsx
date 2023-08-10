@@ -45,7 +45,7 @@ const resume = () => {
               <FaLinkedinIn size={20} style={{ marginRight: "1rem" }} />
             </a>
             <a
-              href="https://github.com/etdesign"
+              href="https://github.com/emre-turan"
               target="_blank"
               rel="noreferrer"
               className="hover:scale-110 ease-in duration-300"
