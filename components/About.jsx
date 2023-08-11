@@ -1,18 +1,15 @@
 import React from "react";
 import Image from "next/image";
 import AboutImg from "../public/assets/about.png";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 
 const About = () => {
   return (
-    <Slide direction="up" triggerOnce="true">
-      <div
-        id="about"
-        className="w-full md:h-screen p-2 flex items-center py-16"
-      >
-        <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 p-4">
-          <div className="col-span-2">
-            <p className="uppercase text-xl tracking-widest text-jelly-bean-600 dark:text-jelly-bean-300">
+    <div id="about" className="w-full md:h-screen p-2 flex items-center py-16">
+      <div className="max-w-[1240px] m-auto md:grid grid-cols-3 gap-8 p-4">
+        <div className="col-span-2">
+          <Fade cascade direction="up" triggerOnce="true">
+            <p className="uppercase text-lg tracking-widest text-jelly-bean-600 dark:text-jelly-bean-300">
               About
             </p>
             <h2 className="py-4 text-jelly-bean-950 dark:text-jelly-bean-50">
@@ -43,19 +40,19 @@ const About = () => {
               language and more about the ability to select and leverage the
               best tool for the job.
             </p>
-          </div>
+          </Fade>
+        </div>
 
-          <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-lg flex items-center justify-center dark:shadow-none mt-4 overflow-hidden">
-            <Image
-              src={AboutImg}
-              className="transition duration-300 ease-in-out hover:scale-110"
-              alt="Emre played DJ set on nightclub"
-              placeholder="blur"
-            />
-          </div>
+        <div className=" w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-lg flex items-center justify-center dark:shadow-none mt-4 overflow-hidden">
+          <Image
+            src={AboutImg}
+            className="transition duration-300 ease-in-out hover:scale-110"
+            alt="Emre played DJ set on nightclub"
+            placeholder="blur"
+          />
         </div>
       </div>
-    </Slide>
+    </div>
   );
 };
 

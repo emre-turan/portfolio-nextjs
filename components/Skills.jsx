@@ -15,7 +15,7 @@ const Skills = () => {
     <div id="skills" className="w-full lg:h-screen p-2">
       <Slide direction="up" triggerOnce="true">
         <div className="max-w-[1240px] mx-auto flex flex-col justify-center h-full p-4">
-          <p className="text-xl tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
+          <p className="text-lg tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
             Skills
           </p>
           <h2 className="py-4">Tech Stack</h2>

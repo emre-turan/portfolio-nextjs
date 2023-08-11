@@ -10,7 +10,7 @@ const Main = () => {
     <div id="home" className="w-full h-screen text-center">
       <div className="max-w-[1240px] w-full h-full mx-auto p-4 flex justify-center items-center ">
         <div>
-          <Fade direction="up" triggerOnce="true">
+          <Fade triggerOnce="true">
             <p className="uppercase text-sm tracking-widest text-jelly-bean-950 dark:text-jelly-bean-50">
               LET&#39;S BUILD
             </p>
@@ -25,7 +25,7 @@ const Main = () => {
               integrating back-end technologies.
             </p>
             <AttentionSeeker effect="pulse" delay={1000} triggerOnce="true">
-              <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
+              <div className="flex items-center justify-between max-w-[330px] m-auto py-6">
                 <a
                   href="https://www.linkedin.com/in/emre-turan/"
                   target="_blank"
@@ -37,7 +37,7 @@ const Main = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/etdesign"
+                  href="https://github.com/emre-turan"
                   target="_blank"
                   rel="noreferrer"
                   aria-label="GitHub"

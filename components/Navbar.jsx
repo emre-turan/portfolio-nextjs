@@ -136,7 +136,7 @@ const Navbar = () => {
 
               <button
                 onClick={handleNav}
-                className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer dark:shadow-jelly-bean-900 dark:bg-jelly-bean-50 dark:text-jelly-bean-900"
+                className="rounded-full shadow-lg shadow-gray-400 p-2 mt-4 cursor-pointer dark:shadow-none dark:bg-jelly-bean-50 dark:text-jelly-bean-900"
               >
                 <AiOutlineClose />
               </button>
@@ -221,7 +221,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href="https://github.com/etdesign"
+                  href="https://github.com/emre-turan"
                   target="_blank"
                   rel="noreferrer"
                 >

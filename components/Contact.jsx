@@ -4,9 +4,9 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { HiOutlineChevronDoubleUp } from "react-icons/hi";
+import { AiOutlineArrowUp } from "react-icons/ai";
 import ContactImg from "../public/assets/contact.jpg";
-import { Slide } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import ReCAPTCHA from "react-google-recaptcha";
 import { useState } from "react";
 
@@ -38,10 +38,10 @@ const Contact = () => {
   };
 
   return (
-    <Slide direction="up" triggerOnce="true">
+    <Fade direction="up" triggerOnce="true">
       <div id="contact" className="w-full lg:h-screen ">
         <div className="max-w-[1240px] m-auto px-4 pt-16 w-full ">
-          <p className="text-xl tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
+          <p className="text-lg tracking-widest uppercase text-jelly-bean-600 dark:text-jelly-bean-300">
             Contact
           </p>
           <h2 className="py-4 text-jelly-bean-950 dark:text-jelly-bean-50">
@@ -217,17 +217,14 @@ const Contact = () => {
           {/* scroll to top */}
           <div className="flex justify-center py-12">
             <button onClick={scrollToTop} href="/">
-              <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-2xl">
-                <HiOutlineChevronDoubleUp
-                  className="text-jelly-bean-950"
-                  size={30}
-                />
+              <div className="rounded-full shadow-lg shadow-gray-400  p-2 cursor-pointer hover:scale-110 ease-in duration-300 dark:bg-jelly-bean-50 dark:text-jelly-bean-950 dark:shadow-none">
+                <AiOutlineArrowUp className="text-jelly-bean-950" />
               </div>
             </button>
           </div>
         </div>
       </div>
-    </Slide>
+    </Fade>
   );
 };
 
