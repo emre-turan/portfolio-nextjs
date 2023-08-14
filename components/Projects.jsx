@@ -63,7 +63,7 @@ const Projects = () => {
         </Fade>
         <div className="flex justify-center p-2 m-2">
           <a
-            href="https://github.com/etdesign"
+            href="https://github.com/emre-turan"
             target="_blank"
             rel="noreferrer"
           >
