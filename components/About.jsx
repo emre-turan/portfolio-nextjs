@@ -15,30 +15,26 @@ const About = () => {
             <h2 className="py-4 text-jelly-bean-950 dark:text-jelly-bean-50">
               Who I Am
             </h2>
-
             <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50 ">
-              Based in the vibrant city of Izmir, Turkey, I am a university
-              graduate turned dedicated web developer. My journey in the tech
-              world is as exciting and dynamic as my 8-year stint as a
+              Hey there! I&apos;m Emre, a web developer by day and a musician by
+              night, hailing from the lively city of Izmir, Turkey.
+            </p>
+            <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50 ">
+              My journey into the world of technology started after graduating
+              from university, but my love for creation has always been there.
+              You see, before diving into code, I spent 8 thrilling years as a
               professional musician, DJ, and producer in the realm of electronic
-              music. Just as I create harmonious tunes, I construct
-              mobile-responsive front-end UI applications that ensure seamless
-              interaction and functionality. My tools of the trade include HTML,
-              CSS, JavaScript, Next, and React, which I use to develop efficient
-              and visually appealing user interfaces.
+              music. Just like crafting a perfect beat, I found joy in building
+              mobile-responsive front-end UI applications that sing with
+              seamless interaction.
             </p>
             <p className="py-2 text-jelly-bean-950 dark:text-jelly-bean-50">
-              My passion for web development, much like my love for music, TV
-              series, movies, and wellness, goes beyond the familiar. I am
-              always eager to learn and explore new technologies that can
-              enhance the development process. I understand that in the world of
-              programming, just as in music, there&apos;s more than one method
-              to create a masterpiece. This open-minded perspective makes me a
-              quick learner, ready to embrace and master new tech stacks as
-              needed. I firmly believe that being a great developer, much like
-              being a great musician, is less about proficiency in a specific
-              language and more about the ability to select and leverage the
-              best tool for the job.
+              I remember the moment it all clicked for me. I was working on a
+              complex piece of music, and I realized that the process of
+              layering sounds was not unlike layering code to create a visually
+              stunning website. My tools? HTML, CSS, JavaScript, Next, and
+              React. My goal? To create user interfaces that are as harmonious
+              as a well-composed tune.
             </p>
           </Fade>
         </div>
