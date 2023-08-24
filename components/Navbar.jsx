@@ -58,39 +58,38 @@ const Navbar = () => {
             />
           )}
         </Link>
-
         <div>
           <ul className="hidden md:flex ">
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/">Home</Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/#about" scroll={false}>
+            <Link href="/#home" scroll={false}>
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
+                Home
+              </li>
+            </Link>{" "}
+            <Link href="/#about" scroll={false}>
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
                 About
-              </Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/#skills" scroll={false}>
-                {" "}
-                Skills
-              </Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/#projects" scroll={false}>
+              </li>
+            </Link>
+            <Link href="/#projects" scroll={false}>
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
                 Projects
-              </Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/resume">Resume</Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/blog">Blog</Link>
-            </li>
-            <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
-              <Link href="/#contact" scroll={false}>
+              </li>
+            </Link>
+            <Link href="/#contact" scroll={false}>
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
                 Contact
-              </Link>
-            </li>
+              </li>
+            </Link>
+            <Link href="/resume">
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
+                Resume
+              </li>
+            </Link>
+            <Link href="/blog">
+              <li className="ml-10 font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50">
+                Blog
+              </li>
+            </Link>
             <li className="ml-10  dark:text-gray-300">
               <ToggleButton />
             </li>
@@ -104,7 +103,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {/* Mobile Menu */}
       {/* Overlay */}
       <div
@@ -133,7 +131,6 @@ const Navbar = () => {
                   />
                 )}
               </Link>
-
               <button
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-2 mt-4 cursor-pointer dark:shadow-none dark:bg-jelly-bean-50 dark:text-jelly-bean-900"
@@ -165,20 +162,20 @@ const Navbar = () => {
                   About
                 </li>
               </Link>
-              <Link href="/#skills">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
-                >
-                  Skills
-                </li>
-              </Link>
               <Link href="/#projects">
                 <li
                   onClick={() => setNav(false)}
                   className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
                 >
                   Projects
+                </li>
+              </Link>
+              <Link href="/#contact">
+                <li
+                  onClick={() => setNav(false)}
+                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
+                >
+                  Contact
                 </li>
               </Link>
               <Link href="/resume">
@@ -195,14 +192,6 @@ const Navbar = () => {
                   className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
                 >
                   Blog
-                </li>
-              </Link>
-              <Link href="/#contact">
-                <li
-                  onClick={() => setNav(false)}
-                  className="py-4 text-sm font-medium tracking-wide text-gray-600 hover:text-jelly-bean-950 dark:text-gray-300 dark:hover:text-jelly-bean-50"
-                >
-                  Contact
                 </li>
               </Link>
             </ul>
