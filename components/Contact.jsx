@@ -76,7 +76,7 @@ const Contact = () => {
                       </div>
                     </a>
                     <a
-                      href="https://github.com/etdesign"
+                      href="https://github.com/emre-turan"
                       target="_blank"
                       rel="noreferrer"
                       aria-label="Github"

@@ -132,39 +132,7 @@ const AboutMe = () => {
     </div>
   );
 };
-const TechStack = () => {
-  {
-    /* Skills */
-  }
-  return (
-    <div className="text-center my-4 border shadow-xl shadow-gray-400 rounded-2xl p-4 dark:shadow-2xl dark:bg-jelly-bean-950 dark:text-jelly-bean-50 dark:border dark:border-gray-700 hover:border-slate-300 dark:hover:border-gray-700/70">
-      <h5 className="text-center underline text-[18px] py-2 ">Tech Stack</h5>
-      <div className="flex flex-wrap justify-center py-2">
-        <span>HTML</span>
-        <span className="px-2">|</span>
-        <span>CSS</span>
-        <span className="px-2">|</span>
-        <span>Javascript</span>
-        <span className="px-2">|</span>
-        <span>Typescript</span>
-        <span className="px-2">|</span>
-        <span>React</span>
-        <span className="px-2">|</span>
-        <span>Nextjs</span>
-        <span className="px-2">|</span>
-        <span>MySQL</span>
-        <span className="px-2">|</span>
-        <span>MongoDB</span>
-        <span className="px-2">|</span>
-        <span>Nodejs</span>
-        <span className="px-2">|</span>
-        <span>Tailwind</span>
-        <span className="px-2">|</span>
-        <span>Bootstrap</span>
-      </div>
-    </div>
-  );
-};
+
 const Experience = () => {
   {
     /* Experience */
@@ -257,7 +225,6 @@ const resume = () => {
       <div className="max-w-[940px] mx-auto p-5 pt-[120px]">
         <Intro />
         <AboutMe />
-        <TechStack />
         <Experience />
         <BackButton href="/" />
       </div>
